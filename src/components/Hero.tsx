@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden px-6 pt-20">
+    <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden px-6 pt-20">
       
       {/* Brand Logo */}
       <motion.div 
@@ -19,7 +19,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Abstract Background Element */}
-      <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-brand-purple/10 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] rounded-full bg-[radial-gradient(circle_at_center,rgba(107,76,154,0.15)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
         
