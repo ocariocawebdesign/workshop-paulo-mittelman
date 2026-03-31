@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-onyx: #0a0a0c;
+  --color-graphite: #1a1a1e;
+  --color-sand: #f5f5f1;
+  --color-brand-purple: #6b4c9a; /* Terapeuta Conecta brand */
+  --color-brand-light: #8e7aba; 
+  --color-brand-dark: #4a346e;
+  
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+
+  --animate-spring-up: spring-up 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes spring-up {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-onyx);
+    color: var(--color-sand);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px var(--color-brand-purple);
+  color: transparent;
+}
+.text-stroke-light {
+  -webkit-text-stroke: 3px rgba(245, 245, 241, 0.85);
+  color: transparent;
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-onyx);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-graphite);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-purple);
+}
