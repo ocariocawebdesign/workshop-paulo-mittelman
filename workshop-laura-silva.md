@@ -1,13 +1,13 @@
-# Workshop Paulo Mittelman - Landing Page
+# Workshop Laura Silva - Landing Page
 
 ## Objetivo
-Criar uma landing page moderna, performática e com alto impacto visual para o workshop online "Análise Transacional no Tratamento das Dependências Químicas", ministrado por Paulo Mittelman, organizado pela Terapeuta Conecta.
+Criar uma landing page moderna, performática e com alto impacto visual para o workshop online "Análise Transacional no Tratamento das Dependências Químicas", ministrado por Laura Silva, organizado pela Terapeuta Conecta.
 
 ## Requisitos Iniciais
 - **Stack:** React, Vite, Tailwind CSS, Framer Motion
 - **Conteúdo:** 
-  - Nome: Paulo Mittelman (@paulomittelman)
-  - Biografia: Psicólogo clínico (CRP 05/2293), Formado PUC-RJ 1976, Psicanalista Titulado SEPLA 1982, Análise Transacional, membro ABEAD.
+  - Nome: Laura Silva (@laurasilva)
+  - Biografia: Psicóloga clínica (CRP 06/54321), Formada USP 2005, Especialista em Análise Transacional e Terapias Contextuais 2010, membro da Associação Brasileira de Terapias Cognitivas.
   - Workshop: "Análise Transacional no Tratamento das Dependências Químicas"
   - Data: 06 e 13 de abril de 2026
   - Horário: 18h até 19:30h (Google Meet)

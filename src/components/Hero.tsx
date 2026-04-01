@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
+  const [loading, setLoading] = useState(false);
+
+  const handleCheckout = () => {
+    setLoading(true);
+    window.location.href = "http://controle-clientes.local/checkout/?add-to-cart=12";
+  };
   return (
     <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden px-6 pt-20">
       
@@ -47,8 +54,8 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent z-10 pointer-events-none opacity-80" />
             <div className="absolute inset-0 bg-brand-purple mix-blend-color opacity-30 group-hover:opacity-0 transition-opacity duration-700 z-10 pointer-events-none" />
             <img 
-              src="/paulo-m.webp" 
-              alt="Paulo Mittelman"
+              src="/psicologa-em-ambiente.webp" 
+              alt="Laura Silva"
               className="w-full h-full object-cover object-top grayscale contrast-125 opacity-40 hover:opacity-90 hover:grayscale-0 transition-all duration-700 relative z-0"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
@@ -73,16 +80,22 @@ export default function Hero() {
           <div>
             <div className="h-px w-12 bg-brand-purple mt-16 lg:mt-20" />
             <p className="lg:mt-20 text-sand/80 text-lg md:text-xl font-light leading-relaxed">
-              Uma abordagem profunda e transformadora para profissionais de saúde mental por <strong className="text-sand font-bold">Paulo Mittelman</strong> 
+              Uma abordagem profunda e transformadora para profissionais de saúde mental por <strong className="text-sand font-bold">Laura Silva</strong> 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-8 md:items-center">
-              <a href="https://mpago.la/1Wv4LvT" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center justify-center px-10 py-5 bg-brand-purple text-white font-black uppercase tracking-wider text-sm transition-all hover:bg-white hover:text-brand-purple rounded-sm overflow-hidden border border-brand-purple hover:border-white shadow-[0_0_20px_rgba(107,76,154,0.3)]">
-                <span className="relative z-10 transition-transform group-hover:-translate-y-16 text-center">Garantir Vaga</span>
-                <span className="absolute inset-0 z-10 flex flex-col items-center justify-center translate-y-16 group-hover:translate-y-0 transition-transform duration-300 leading-tight">
-                  <span className="text-[10px] tracking-widest opacity-80 uppercase">Por Apenas</span>
-                  <span className="tracking-widest text-lg">R$ 24,90</span>
-                </span>
-              </a>
+              <button onClick={handleCheckout} disabled={loading} className="group relative inline-flex items-center justify-center px-10 py-5 bg-brand-purple text-white font-black uppercase tracking-wider text-sm transition-all hover:bg-white hover:text-brand-purple rounded-sm overflow-hidden border border-brand-purple hover:border-white shadow-[0_0_20px_rgba(107,76,154,0.3)] disabled:opacity-70 disabled:cursor-not-allowed">
+                {loading ? (
+                  <span className="relative z-10 text-center">Redirecionando...</span>
+                ) : (
+                  <>
+                    <span className="relative z-10 transition-transform group-hover:-translate-y-16 text-center">Garantir Vaga</span>
+                    <span className="absolute inset-0 z-10 flex flex-col items-center justify-center translate-y-16 group-hover:translate-y-0 transition-transform duration-300 leading-tight">
+                      <span className="text-[10px] tracking-widest opacity-80 uppercase">Por Apenas</span>
+                      <span className="tracking-widest text-lg">R$ 24,90</span>
+                    </span>
+                  </>
+                )}
+              </button>
               <p className="text-brand-purple font-bold tracking-widest uppercase text-xs pt-2 sm:pt-0">Vagas Limitadas</p>
             </div>
           </div>

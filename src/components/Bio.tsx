@@ -17,7 +17,7 @@ export default function Bio() {
           className="md:w-1/3 pt-4 relative"
         >
           <h2 className="text-6xl md:text-7xl font-black uppercase text-brand-purple leading-none tracking-tighter mb-6 relative Z-10">
-            O<br/>Facili<br/>tador
+            A<br/>Facili<br/>tadora
           </h2>
           <div className="h-full w-px bg-brand-purple/20 absolute left-8 top-0 z-0 hidden md:block" />
         </motion.div>
@@ -30,32 +30,32 @@ export default function Bio() {
           className="md:w-2/3 space-y-12 relative z-10"
         >
           <div>
-            <h3 className="text-3xl md:text-4xl font-serif text-sand mb-4">Paulo Mittelman</h3>
+            <h3 className="text-3xl md:text-4xl font-serif text-sand mb-4">Laura Silva</h3>
             <p className="inline-block px-3 py-1 bg-brand-purple/10 text-brand-light font-bold tracking-widest uppercase text-xs rounded-sm mb-8 border border-brand-purple/20">
-              @paulomittelman
+              @laurasilva
             </p>
             
             <div className="prose prose-invert prose-lg max-w-none text-sand/70 font-light leading-relaxed">
               <p>
-                É Psicólogo Clínico (CRP 05/2293), formado pela PUC-RJ em 1976. Com uma trajetória clínica densa dedicada à saúde mental e intervenções transformadoras.
+                É Psicóloga Clínica (CRP 06/54321), formada pela Universidade de São Paulo (USP) em 2005. Com uma trajetória clínica dedicada à excelência no atendimento à saúde mental e no acolhimento de casos complexos.
               </p>
               <p>
-                Psicanalista Titulado pela SEPLA em 1982 e formado em Análise Transacional. Uma bagagem clínica que une a profundidade da psicanálise clássica com a estrutura pragmática e relacional da análise transacional.
+                Especialista em Análise Transacional e Terapias Contextuais desde 2010. Sua abordagem clínica une metodologias pragmáticas baseadas em evidências com uma escuta empática e focada na evolução do paciente.
               </p>
               <p>
-                Membro associado da <strong className="text-sand border-b border-brand-purple/50">ABEAD</strong>. Atualmente exerce a psicoterapia de adultos e crianças em consultório privado, aplicando sua experiência no tratamento pontual de dependências.
+                Membro da Associação Brasileira de Terapias Cognitivas. Atualmente exerce a psicoterapia em consultório privado, aplicando sua vasta experiência na reestruturação comportamental e tratamento de dependências.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/10 p-px rounded-sm overflow-hidden">
              <div className="bg-onyx p-8 flex flex-col justify-center transition-colors hover:bg-white/[0.02]">
-                <span className="text-5xl font-black text-brand-purple">1976</span>
-                <span className="text-xs text-sand/50 uppercase tracking-widest mt-2">Formação PUC-RJ</span>
+                <span className="text-5xl font-black text-brand-purple">2005</span>
+                <span className="text-xs text-sand/50 uppercase tracking-widest mt-2">Formação USP</span>
              </div>
              <div className="bg-onyx p-8 flex flex-col justify-center transition-colors hover:bg-white/[0.02]">
-                <span className="text-5xl font-black text-brand-purple">1982</span>
-                <span className="text-xs text-sand/50 uppercase tracking-widest mt-2">Titulado SEPLA</span>
+                <span className="text-5xl font-black text-brand-purple">2010</span>
+                <span className="text-xs text-sand/50 uppercase tracking-widest mt-2">Especialista</span>
              </div>
           </div>
         </motion.div>

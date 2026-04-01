@@ -22,7 +22,7 @@ export default function Details() {
                Muitos profissionais se sentem estagnados ou inseguros ao lidar com a imprevisibilidade da dependência química na clínica.
              </p>
              <p className="text-brand-light font-bold text-sm tracking-wide">
-               Este workshop entrega o mapa mental pragmático que Paulo Mittelman utiliza para gerar adesão e resultados reais.
+               Este workshop entrega o mapa mental pragmático que Laura Silva utiliza para gerar adesão e resultados reais.
              </p>
           </div>
         </div>
