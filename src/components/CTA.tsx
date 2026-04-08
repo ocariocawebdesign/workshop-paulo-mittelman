@@ -1,15 +1,7 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CreditCard, MessageCircle } from 'lucide-react';
 
 export default function CTA() {
-  const [loading, setLoading] = useState(false);
-
-  const handleCheckout = () => {
-    setLoading(true);
-    window.location.href = "http://controle-clientes.local/checkout/?add-to-cart=12";
-  };
-
   const email = "terapeutaconecta@gmail.com";
 
   return (
@@ -41,7 +33,7 @@ export default function CTA() {
             Domine o manejo<br />
             da dependência
           </h2>
-          <p className="text-sand/70 max-w-xl mx-auto font-light text-lg">
+          <p className="text-sand/70 max-w-xl mx-auto font-light text-base md:text-lg">
             Avance na sua carreira clínica. Domine a Análise Transacional e conquiste segurança absoluta no tratamento dos seus pacientes.
           </p>
         </motion.div>
@@ -49,19 +41,20 @@ export default function CTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           
           {/* Main MP Checkout Button */}
-          <button 
-            onClick={handleCheckout}
-            disabled={loading}
-            className="flex items-center gap-3 px-10 py-5 bg-brand-purple text-white font-black uppercase tracking-widest text-sm hover:bg-white hover:text-brand-purple transition-all hover:-translate-y-1 rounded-sm w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(107,76,154,0.4)] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+          <a 
+            href="https://ocariocawebdesign.com.br/sprj/pagamento/index.php/produto/workshop-laura-silva/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-6 py-4 sm:px-10 sm:py-5 bg-brand-purple text-white font-black uppercase tracking-widest text-sm hover:bg-white hover:text-brand-purple transition-all hover:-translate-y-1 rounded-sm w-full sm:w-auto justify-center shadow-[0_0_20px_rgba(107,76,154,0.4)]"
           >
             <CreditCard size={18} />
-            {loading ? "Redirecionando..." : "Quero Me Inscrever Agora"}
-          </button>
+            Quero Me Inscrever Agora
+          </a>
 
           {/* Contact Button */}
           <a 
-            href={`mailto:${email}?subject=Dúvidas:%20Workshop%20Laura%20Silva`}
-            className="flex items-center gap-3 px-8 py-5 border border-brand-purple/30 text-sand hover:bg-brand-purple/10 font-bold uppercase tracking-widest text-sm transition-colors rounded-sm w-full sm:w-auto justify-center"
+            href={`mailto:${email}?subject=Dúvidas:%20Workshop%20Paulo%20Mittelman`}
+            className="flex items-center gap-3 px-6 py-4 sm:px-8 sm:py-5 border border-brand-purple/30 text-sand hover:bg-brand-purple/10 font-bold uppercase tracking-widest text-sm transition-colors rounded-sm w-full sm:w-auto justify-center"
           >
             <MessageCircle size={18} /> Dúvidas? Fale conosco
           </a>
